@@ -1,0 +1,275 @@
+h1,h2,h3,h4,h5,h6{
+  margin:15px 0;
+}
+.logo{
+  max-width:40px;
+}
+
+.product-column{
+  min-height:200px;
+}
+.product-name{
+  min-height:80px;
+  text-transform: capitalize;
+}
+.product-thumbnail{
+  border:1px solid #cccccc;
+}
+.product-description{
+  min-height: 100px;
+  hyphens: auto;
+  /*word-break: break-all;*/
+}
+.price::before{
+  content:'$';
+}
+.product-price{
+  font-weight: 200;
+  margin:1em 0;
+}
+.content{
+  margin-top:30px;
+}
+
+.image-indicators{
+  width: 100%;
+  background-color: #eee;
+  margin: 0;
+  bottom: -80px;
+}
+.image-indicators li{
+  max-height: 40px;
+  height: auto;
+  width: 60px;
+  text-indent: 0;
+  background-color: #333333;
+  border: 1px solid #cccccc;
+}
+
+.image-indicators .active{
+  border: 1px solid #333333;
+}
+
+.product-column > a{
+  text-decoration: none;
+  color: inherit;
+}
+.product-nav{
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+.product-nav-text{
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/*toggle button*/
+.toggle{
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  margin-top: 2em;
+  border-radius: 15px;
+  border: 1px solid #666;
+  box-sizing: content-box;
+}
+.toggle input[type="checkbox"]{
+  position: absolute;
+  display: none;
+}
+.toggle-label{
+  position: absolute;
+  top: -2em;
+}
+.toggle-button{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.6);
+  border: 1px solid #666;
+  box-sizing: border-box;
+  position:absolute;
+  left:0;
+  transition: left 0.5s;
+}
+.toggle input:checked + .toggle-button{
+  right:0;
+  left: 30px;
+  background-color: white;
+}
+.toggle input + .toggle-button + .toggle-label::after{
+  content: "Inactive";
+  width:30px;
+  height:30px;
+  display:block;
+}
+.toggle input:checked + .toggle-button + .toggle-label::after{
+  content: "Active";
+}
+
+.image-uploader input[type="file"]{
+  display:none;
+}
+.image-uploader label{
+  display:block;
+  min-height:50px;
+}
+
+.image-uploader .uploader-label{
+  background-color:black;
+  color: white;
+}
+/*when there is no image uploader*/
+#image-upload:empty::after{
+  content:"Click on upload image to add an image";
+  font-size:1.2em;
+  color:#bbb;
+  text-align: center;
+  margin:auto;
+}
+
+.spinner{
+  max-width: 25px;
+}
+
+
+/***********************************************************/
+
+
+.slideHeight {
+  max-height: 600px;
+}
+
+.homeGallery {
+  height:280px;
+}
+
+
+.thumbnail {
+  position: relative;
+  height:330px;
+  
+}
+
+
+.paddingb30 {
+  padding-bottom: 30px;
+}
+
+.captionGallery{
+  text-align: center;
+  position: absolute;
+  right: 0;  
+  left: 0;
+  bottom: 0px;
+}
+
+.galleryCaption {
+  color: #333333;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color:#f8f8f8;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.navDiv {
+  text-align: right;
+}
+
+
+.searchInput {
+  outline: none  !important;
+  -webkit-box-shadow: none  !important;
+  -moz-box-shadow: none  !important;
+  box-shadow: none  !important;
+  border-radius: 0 !important;
+  background: transparent  !important;
+  border-width: 0 0 1.5px 0  !important;
+  border-bottom:1.5px solid #C1C1C1  !important;
+}
+
+.searchInput:focus {
+  border-color: #838383 !important;
+  outline: none !important;
+  -webkit-box-shadow: none  !important;
+  -moz-box-shadow: none  !important;
+  box-shadow: none  !important;
+  background: transparent;
+}
+
+
+.menuDiv {
+  display: inline-block;
+}
+
+.navbarLogo {
+  float: left;
+  height: 50px;
+  padding: 8px 15px 8px 0px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
+
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.right-addon input { padding-right: 30px; }
+
+
+.navbarDiv {
+  margin-top: 10px;
+}
+
+.menuDiv {
+  padding-right: 0px !important;
+}
+
+.navUl {
+  position: relative;
+	padding: 0;
+	margin: 0;
+	display:inline-block;
+}
+
+.productCatMenu {
+  padding-top: 0px;
+  width: 180px;
+  min-width: 105px;
+}
+
+.meatCatLink {
+  
+}
+
+a:link, a:visited,a:hover {
+    text-decoration: none;
+    color: #464646;
+    cursor: pointer;
+}
+
+.meatCatLink:hover {
+  color: #2D2D2D;
+  text-decoration: none;
+}
