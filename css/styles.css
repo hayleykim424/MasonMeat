@@ -146,6 +146,9 @@ h1,h2,h3,h4,h5,h6{
   height:280px;
 }
 
+.homeGallery:hover {
+  opacity: 0.7;
+}
 
 .thumbnail {
   position: relative;
@@ -269,7 +272,7 @@ a:link, a:visited,a:hover {
     cursor: pointer;
 }
 
-.meatCatLink:hover {
-  color: #2D2D2D;
+.meatCatLink:hover, .galleryCaption:hover {
+  color: #0E0E0E;
   text-decoration: none;
 }

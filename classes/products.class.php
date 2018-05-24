@@ -34,7 +34,7 @@
       $this -> page_size = $_GET["page_size"];
     }
     //check [category]
-    $category_var = base64_decode( $_GET["category"] );
+    $category_var = $_GET["category"];
     if( isset( $category_var ) 
     && filter_var( $category_var, FILTER_VALIDATE_INT ) 
     && $category_var > 0 ){

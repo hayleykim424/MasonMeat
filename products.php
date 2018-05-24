@@ -35,7 +35,7 @@
     $current_page_number = 1;
   }
   //CURRENT CATEGORY ID
-  $category_var = base64_decode($_GET["category"]);
+  $category_var = $_GET["category"];
   
   if( filter_var($category_var, FILTER_VALIDATE_INT ) ){
     $current_category = $category_var;
@@ -47,6 +47,8 @@
   $page_title = "Products page";
   
 ?>
+
+
 <!doctype html>
 <html>
   <?php include ('includes/head.php'); ?>
@@ -70,7 +72,7 @@
                 $cat_id = $category["category_id"];
                 $cat_link = basename($_SERVER["PHP_SELF"]) . 
                 "?category=" .
-                base64_encode($cat_id);
+                $cat_id;
                 
                 if( $cat_id == $current_category ){
                   $active_class = "active";
