@@ -320,3 +320,17 @@ a:link, a:visited,a:hover {
 .page-item.active .page-link {
     color: #fff !important;
 }
+
+.containerShort {
+  min-height: 300px !important;
+}
+
+.loginRegisterLink {
+  color: #8F3D57 !important;
+}
+
+.loginRegisterLink:hover {
+  color: #af1d4c;
+  text-decoration: none;
+  font-weight: bold;
+}

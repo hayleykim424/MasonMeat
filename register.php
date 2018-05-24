@@ -106,7 +106,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){ //if server receives a post request. 
               
             </div>
             
-            <p class="my-4">Already have an account? <a href="login.php">Log in</a> here</p>
+            <p class="my-4">Already have an account? <a class="loginRegisterLink" href="login.php">Log in</a> here</p>
             
           </form>
         </div>
