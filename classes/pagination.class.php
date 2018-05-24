@@ -24,7 +24,7 @@ class Pagination{
       }
       
       //get the id of current category
-      $selected_category = base64_decode( $_GET["category"] );
+      $selected_category = $_GET["category"];
       if( $selected_category !== 0 ){
         $cat_link = "&category=$selected_category";
       }

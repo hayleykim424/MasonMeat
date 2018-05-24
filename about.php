@@ -17,8 +17,9 @@
       <img class="d-block w-100 " src="/images/about/about.jpg">
     </div>
     
-    <div class="container">
-      <div class ="column">
+    <section class = "ourstory-content">
+      <div class="container">
+      <div class ="row">
         <div class ="thumb-image">
           <img src = "/images/about/about3.jpg" alt="Our Story">
         </div>
@@ -45,8 +46,10 @@
            <p class = "message">
            That's why we have invested in Mason's Best Meat!
           </p>
-          
         </div>
+      
+    </section>
+    
       </div>
 
       

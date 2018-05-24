@@ -57,7 +57,7 @@ $page_title = $product_name;
           
           <div>
             
-            <button>Buy</button>
+            <button class="btn btn-block btn-md btn-default">Add to cart</button>
             
             
           </div>
@@ -65,5 +65,7 @@ $page_title = $product_name;
 
       </div>
     </div>
+    
+    <?php include('includes/footer.php'); ?>
   </body>
 </html>

@@ -10,10 +10,18 @@ h1,h2,h3,h4,h5,h6{
 .product-column{
   min-height:200px;
 }
+
+.product-name: hover {
+  text-decoration: none !important;
+  
+}
+
 .product-name{
-  min-height:20px;
+  min-height:45px;
   text-transform: capitalize;
 }
+
+
 .product-thumbnail{
   border:1px solid #cccccc;
 }
@@ -214,6 +222,7 @@ h1,h2,h3,h4,h5,h6{
 
 .menuDiv {
   display: inline-block;
+  margin-top: 10px;
 }
 
 .navbarLogo {
@@ -289,27 +298,25 @@ a:link, a:visited,a:hover {
   float: left;
 }
 
-.ourstory-content .content{
-  float: left;
-  width: 100%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: center;
-}
-, 
-.ourstory-content .thumb-image{
-   max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 5px;
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding-top: 5px;
 
+.welcomeUser {
+  margin-top: 10px !important;
+}
+
+.nav-link.active {
+  background-color: #8F3D57 !important;
+}
+
+.page-item.active .page-link {
+    background-color: #8F3D57 !important;
+    border-color: #8F3D57 !important;
+}
+
+.pagination>li>a, .pagination>li>span {
+    color: #333333 !important;
+}
+
+
+.page-item.active .page-link {
+    color: #fff !important;
 }

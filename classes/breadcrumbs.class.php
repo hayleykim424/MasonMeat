@@ -2,10 +2,10 @@
 class Breadcrumbs{
   static function create( $title ){
     $breadcrumbs = array();
-    $root = array("Home" => "index.php");
+    $root = array("Products" => "products.php");
     array_push( $breadcrumbs, $root );
     //
-    if( self::getCurrentPage() !== 'index.php'){
+    if( self::getCurrentPage() !== 'products.php'){
       $current = self::getPageName( $title );
       $current_page = array( $current => NULL);
       array_push( $breadcrumbs, $current_page );

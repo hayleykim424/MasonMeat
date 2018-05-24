@@ -5,7 +5,7 @@ $navigation = $nav_obj -> getNavigationItems();
 ?>
 
 <?php 
-print_r($_SESSION["username"]);
+//print_r($_SESSION["username"]);
 
 ?> 
 
@@ -54,7 +54,7 @@ print_r($_SESSION["username"]);
       <?php
     if( $_SESSION["username"] ){
       $user = $_SESSION["username"];
-      echo "<span class=\"navbar-text\">Hello $user</span>";
+      echo "<span class=\"navbar-text welcomeUser\">Hi $user</span>";
     }
     ?>
       

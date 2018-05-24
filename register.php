@@ -70,7 +70,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){ //if server receives a post request. 
           
         </div>
         
-        <div class = "col-md-3">
+        <div class = "col-md-4">
           <div class="alert-success-div"></div>
           
           <h4>Register for an account</h4>
