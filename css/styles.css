@@ -1,22 +1,24 @@
+
 h1,h2,h3,h4,h5,h6{
   margin:15px 0;
 }
 .logo{
-  max-width:40px;
+  max-width:115px;
+  max-height:50px;
 }
 
 .product-column{
   min-height:200px;
 }
 .product-name{
-  min-height:80px;
+  min-height:20px;
   text-transform: capitalize;
 }
 .product-thumbnail{
   border:1px solid #cccccc;
 }
 .product-description{
-  min-height: 100px;
+  min-height: 50px;
   hyphens: auto;
   /*word-break: break-all;*/
 }
@@ -181,6 +183,7 @@ h1,h2,h3,h4,h5,h6{
   background-color:#f8f8f8;
   padding-top: 30px;
   padding-bottom: 10px;
+  bottom:0;
 }
 
 .navDiv {
@@ -275,4 +278,38 @@ a:link, a:visited,a:hover {
 .meatCatLink:hover, .galleryCaption:hover {
   color: #0E0E0E;
   text-decoration: none;
+}
+
+
+.pUl {
+  display: block !important;
+}
+
+.page-item {
+  float: left;
+}
+
+.ourstory-content .content{
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+, 
+.ourstory-content .thumb-image{
+   max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 5px;
+
 }

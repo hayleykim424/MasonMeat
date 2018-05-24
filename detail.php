@@ -54,6 +54,13 @@ $page_title = $product_name;
           <p class="description">
             <?php echo $product_description; ?>
           </p>
+          
+          <div>
+            
+            <button>Buy</button>
+            
+            
+          </div>
         </div>
 
       </div>

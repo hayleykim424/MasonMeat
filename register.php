@@ -63,8 +63,14 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){ //if server receives a post request. 
       
       
       
-      <div class="row">
-        <div class = "col-md-4 offset-md-4">
+      <div class="row justify-content-md-center">
+        
+        <div class = "col-md-4">
+          <img class = "" src="/images/graphics/registerImage.jpg" alt="Meat image">
+          
+        </div>
+        
+        <div class = "col-md-3">
           <div class="alert-success-div"></div>
           
           <h4>Register for an account</h4>
@@ -112,6 +118,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){ //if server receives a post request. 
     </script>
     
   </body>
+  
+  <?php include('includes/footer.php'); ?>
 </html>
 
 <template id="alert-template">

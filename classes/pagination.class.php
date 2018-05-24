@@ -34,7 +34,7 @@ class Pagination{
       
       //output the nav element
       echo "<nav class=\"d-flex justify-content-center\" aria-label=\"Product Navigation\">
-            <ul class=\"pagination\">";
+            <ul class=\"pagination pUl\">";
       //if current page is page 1, disable the previous page link
       if( $current_page - 1 <= 0 ){
         $prev_class = 'disabled';
@@ -44,7 +44,7 @@ class Pagination{
         $prev_class = '';
         $prev_link = $current_url . '?' . 'page=' . ($current_page - 1) . $cat_link;
       }
-      echo "<li class=\"page-item $prev_class\">
+      echo "<li class=\"page-item $prev_class fl\">
               <a class=\"page-link\" href=\"$prev_link\" aria-label=\"Previous\">
                 <span aria-hidden=\"true\">&laquo;</span>
                 <span class=\"sr-only\">Previous</span>

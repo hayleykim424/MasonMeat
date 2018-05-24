@@ -6,60 +6,60 @@
   <div class="row paddingb30">
     <div class="col-md-4">
       <div class="thumbnail">
-          <img class = "homeGallery" src="/images/products/beef1.jpg" alt="beef">
+          <a href="products.php?category=1"><img class = "homeGallery" src="/images/products/beef1.jpg" alt="beef"></a>
           <div class="captionGallery">
             <p class="galleryCaption"><a class ="meatCatLink" href="products.php?category=1">BEEF</a></p>
           </div>
-        </a>
       </div>
     </div>
+    
     <div class="col-md-4">
       <div class="thumbnail">
-          <img class = "homeGallery" src="/images/products/pork1.jpg" alt="pork">
+          <a href="products.php?category=2"><img class = "homeGallery" src="/images/products/pork1.jpg" alt="pork"></a>
           <div class="captionGallery">
             <p class="galleryCaption"><a class ="meatCatLink" href="products.php?category=2">PORK</a></p>
           </div>
-        </a>
       </div>
     </div>
+    
     <div class="col-md-4">
       <div class="thumbnail">
-          <img class = "homeGallery" src="/images/products/lamb1.jpg" alt="lamb">
+          <a href="products.php?category=4"><img class = "homeGallery" src="/images/products/lamb1.jpg" alt="lamb"></a>
           <div class="captionGallery">
             <p class="galleryCaption"><a class ="meatCatLink" href="products.php?category=4">LAMB</a></p>
           </div>
-        </a>
       </div>
     </div>
+    
   </div>
   
   <div class="row paddingb30">
     <div class="col-md-4">
       <div class="thumbnail">
-          <img class = "homeGallery" src="/images/products/chicken1.jpg" alt="chicken">
+          <a href="products.php?category=3"><img class = "homeGallery" src="/images/products/chicken1.jpg" alt="chicken"></a>
           <div class="captionGallery">
             <p class="galleryCaption"><a class ="meatCatLink" href="products.php?category=3">CHICKEN</a></p>
           </div>
-        </a>
       </div>
     </div>
+    
     <div class="col-md-4">
       <div class="thumbnail">
-          <img class = "homeGallery" src="/images/products/wholesalemeat1.jpg" alt="wholesalemeat">
+          <a href="products.php?category=0"><img class = "homeGallery" src="/images/products/wholesalemeat1.jpg" alt="wholesalemeat"></a>
           <div class="captionGallery">
             <p class="galleryCaption"><a class ="meatCatLink" href="products.php?category=0">WHOLESALE</a></p>
           </div>
-        </a>
       </div>
     </div>
+    
     <div class="col-md-4">
       <div class="thumbnail">
-          <img class = "homeGallery" src="/images/products/special1.jpg" alt="special">
+          <a href="products.php?category=0"><img class = "homeGallery" src="/images/products/special1.jpg" alt="special"></a>
           <div class="captionGallery">
             <p class="galleryCaption"><a class ="meatCatLink" href="products.php?category=0">SPECIAL</a></p>
           </div>
-        </a>
       </div>
     </div>
   </div>
+  
 </div>

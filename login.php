@@ -30,8 +30,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <body>
     <?php include('includes/navbar.php'); //including navbar on the top of the page ?>
     <div class = "container content">
-      <div class="row">
-        <div class = "col-md-4 offset-md-4">
+      <div class="row justify-content-md-center">
+        
+        <div class = "col-md-3">
+          <img class = "" src="/images/graphics/loginImage.png" alt="Meat image">
+          
+        </div>
+        
+        <div class = "col-md-3">
           <?php
           if(count($account -> errors) > 0) {
             $error_string = implode('', $account -> errors);//first parameter of implode() is seperator between the items of the array.
@@ -68,6 +74,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
     <script src="/js/login.js"></script>
   </body>
+  <?php include('includes/footer.php'); ?>
 </html>
 
 <template id="alert-template">

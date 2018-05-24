@@ -12,7 +12,7 @@ print_r($_SESSION["username"]);
 <div class="navbarDiv container">
 <nav class="navbar navbar-expand-md navbar-light">
   <a class="navbarLogo order-1 float-left" href="index.php">
-    <img class ="logo" src="/images/graphics/logo.png">
+    <img class ="logo" src="/images/graphics/logonew.jpg">
   </a>
   <button class="navbar-toggler order-4" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
