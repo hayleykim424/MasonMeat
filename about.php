@@ -17,7 +17,7 @@
       <img class="d-block w-100 " src="/images/about/about.jpg">
     </div>
     
-    <section class = "ourstory-content">
+    <section class ="ourstory-content">
       <div class="container">
       <div class ="row">
         <div class ="thumb-image">
@@ -47,8 +47,6 @@
            That's why we have invested in Mason's Best Meat!
           </p>
         </div>
-      
-    </section>
     
       </div>
 
@@ -56,7 +54,7 @@
      
     
   </div>
-  
+  </section>
   <?php include('includes/footer.php'); ?>  
      
   </body>

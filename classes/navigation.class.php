@@ -12,7 +12,8 @@ class Navigation{
       $this -> nav_items = array(
       "PRODUCTS" => "products.php",
       "ABOUT" => "about.php",
-      "CONTACT" => "contact.php",
+      "<img class =\"favourite\" src=\"/images/graphics/like.png\">" => "favourite.php",
+      "<img class =\"cart\" src=\"/images/graphics/cart.png\">" => "cart.php",
       "LOG OUT" => "logout.php"
       );
     }
@@ -20,7 +21,6 @@ class Navigation{
       $this -> nav_items = array(
       "PRODUCTS" => "products.php",
       "ABOUT" => "about.php",
-      "CONTACT" => "contact.php",
       "LOGIN" => "login.php"
       );
     }

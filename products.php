@@ -146,10 +146,11 @@
               $image = $product["image"];
               
               echo "<div class=\"col-sm-3 product-column\">";
-              echo "<a href=\"detail.php?product_id=$id\">";
+              echo "<a class=\"productLink\" href=\"detail.php?product_id=$id\">";
               echo "<h4 class=\"product-name\">$name</h4>";
               echo "<img class=\"product-thumbnail img-fluid\" src=\"images/products/$image\">";
-              echo "<h5 class=\"price product-price\">$price</h5>";
+              echo "<div class=\"price product-price d-inline\">$price</div>";
+              echo "<div class=\"faveAdd float-right d-inline\"><img class =\"favourite\" src=\"/images/graphics/like.png\"></div>";
               echo "<p class=\"product-description\">$description</p>";
               echo "</a>";
               echo "</div>";

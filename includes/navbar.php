@@ -45,7 +45,7 @@ $navigation = $nav_obj -> getNavigationItems();
           }
           
           echo "<li class=\"nav-item $active text-right\">
-                  <a class=\"nav-link\" href=\"/$link\">$name</a>
+                  <a class=\"nav-link navMenu\" href=\"/$link\">$name</a>
                 </li>";
         }
       }

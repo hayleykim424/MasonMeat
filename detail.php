@@ -57,7 +57,10 @@ $page_title = $product_name;
           
           <div>
             
-            <button class="btn btn-block btn-md btn-default">Add to cart</button>
+            
+            
+            <button class="btn btn-md btn-default">Add to wishlist</button>
+            <button class="btn btn-md btn-default">Add to cart</button>
             
             
           </div>
