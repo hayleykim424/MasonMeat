@@ -353,8 +353,9 @@ a:link, a:visited,a:hover {
 }
 
 .favourite, .cart {
-  width: 15px;
-  height: 15px;
+  margin-top: -5px;
+  width: 18px;
+  height: 18px;
 }
 
 .favourite:hover , .cart:hover {
@@ -373,4 +374,12 @@ a:link, a:visited,a:hover {
 
 .faveAdd {
   z-index: 2;
+}
+
+.quantityInput {
+  max-width: 50px;
+}
+
+.quantityDiv1 {
+  display: inline-block !important;
 }

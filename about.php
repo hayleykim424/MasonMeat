@@ -26,25 +26,18 @@
         <div class = "content">
           <h3 class = "subtitle">Our Story</h3>
           <p class = "message">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, but also the leap into 
-            electronic typesetting, remaining essentially unchanged.
+            We pride ourselves on premium cuts of meat, the finest poultry, competitive prices and reliable on-time delivery of your complete order.
           </p>
           <p class = "message">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-            It has survived not only five centuries, but also the leap into 
-            electronic typesetting, remaining essentially unchanged.
+            Located in Sydney, Mason’s Best Meat offers delicious MSA graded beef from our Australian farmers, tasty sausages, 
+            succulent lamb, pork and veal, plus chemical-free and hormone-free chicken and turkey. For that special occasion, 
+            you can even order specialist meats online such as duck, quail, pheasant, spatchcock, kangaroo and crocodile.
           </p>
           <p class = "message">
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived remaining essentially unchanged.
+            Mason’s Best Meat provides to you best quality of meat in this online store in convenient way that means you can order premium meats online from the anywhere with website connection.
           </p>
            <p class = "message">
-           That's why we have invested in Mason's Best Meat!
+           That's how we established Mason's Best Meat!
           </p>
         </div>
     

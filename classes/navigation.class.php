@@ -1,8 +1,20 @@
+  <?php
+    $cart = new ShoppingCart();
+    $cart_count = $cart -> getCartCount();
+    ?>
+
 <?php
 class Navigation{
   private $nav_items = array();
   public $current_page;
   private $json;
+  
+  
+
+  
+  
+  
+  
   public function __construct($json = false){
     $this -> json = $json;
     //get the current page so it can be marked as active in the navigation bar
@@ -12,8 +24,9 @@ class Navigation{
       $this -> nav_items = array(
       "PRODUCTS" => "products.php",
       "ABOUT" => "about.php",
-      "<img class =\"favourite\" src=\"/images/graphics/like.png\">" => "favourite.php",
-      "<img class =\"cart\" src=\"/images/graphics/cart.png\">" => "cart.php",
+      //"<img class =\"favourite\" src=\"/images/graphics/like.png\">" => "favourite.php",
+      //"<img class =\"cart\" src=\"/images/graphics/cart.png\">" => "cart.php",
+      
       "LOG OUT" => "logout.php"
       );
     }

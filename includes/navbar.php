@@ -51,6 +51,25 @@ $navigation = $nav_obj -> getNavigationItems();
       }
       ?>
       
+      
+      
+      
+    
+    <div class="cart-group d-flex align-self-center order-8 order-md-9">
+    <?php
+    $cart = new ShoppingCart();
+    $cart_count = $cart -> getCartCount();
+    ?>
+    <a href="shoppingcart.php" class="nav-icon cart mx-1">
+      <img class="icon cart" src="images/graphics/cart.png">
+      <span id="cart-count" class="badge badge-primary"><?php echo $cart_count; ?></span>
+    </a>
+    <!--<span class="nav-icon wish mx-1">-->
+    <!--  <img class="icon" src="images/graphics/icons/wish-bag.png">-->
+    <!--  <span id="wish-count" class="badge badge-primary">1</span>-->
+    <!--</span>-->
+  </div>
+      
       <?php
     if( $_SESSION["username"] ){
       $user = $_SESSION["username"];
