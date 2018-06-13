@@ -64,21 +64,48 @@ $page_title = $product_name;
            <!--form for shopping cart and wishlist-->
           <form id="shopping-form" class="my-2 form-inline">
             <div class="form-row w-100">
-              <div class="col-8 col-md-3 input-group">
+              
+              
+              
+              <div class="input-group">
                 <div class="input-group product-quantity my-2 my-md-0">
-                  <div class="input-group-prepend">
-                    <button class="btn btn-outline-primary" data-function="subtract" type="button">&minus;</button>
-                  </div>
-                  <input type="text" name="quantity" value="1" min="1" class="form-control border-primary text-center flex-fill">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-primary" data-function="add" type="button">&plus;</button>
-                  </div>
+                  <span class="input-group-btn">
+                    <button class="btn btn-md btn-default" data-function="subtract" type="button">&minus;</button>
+                  </span>
+                  
+                  <input type="text" name="quantity" value="1" min="1" class="quantityInput form-control border-default text-center flex-fill">
+                  
+                  <span class="input-group-btn">
+                    <button class="btn btn-md btn-default" data-function="add" type="button" >&plus;</button>
+                  </span>
+                  
                   <!--product id in the form-->
                   <input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
                 </div>
               </div>
               
-              <div class="form-row w-100">
+              
+              
+              
+            <!--  <div class="input-group">-->
+            <!--  <span class="input-group-btn">-->
+            <!--      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">-->
+            <!--          <span class="glyphicon glyphicon-minus"></span>-->
+            <!--      </button>-->
+            <!--  </span>-->
+            <!--  <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">-->
+            <!--  <span class="input-group-btn">-->
+            <!--      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">-->
+            <!--          <span class="glyphicon glyphicon-plus"></span>-->
+            <!--      </button>-->
+            <!--  </span>-->
+            <!--</div>-->
+              
+              
+              
+              
+              
+              <div class="addDiv form-row w-100">
               
               <div class="col-12 col-md-7">
                 <button class="btn btn-md btn-default" type="submit" name="submit" value="shoppingcart">
@@ -90,6 +117,15 @@ $page_title = $product_name;
                   Wishlist
                 </button>
               </div>
+              
+              
+              
+              
+            
+              
+              
+              
+              
               
               </div>
               

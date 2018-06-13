@@ -8,7 +8,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .content {
-  border: 1px red solid;
   min-height: 500px;
 }
 
@@ -381,9 +380,6 @@ a:link, a:visited,a:hover {
   z-index: 2;
 }
 
-.quantityInput {
-  max-width: 50px;
-}
 
 .quantityDiv1 {
   display: inline-block !important;
@@ -402,4 +398,20 @@ div.thumb-image {
 
 .checkoutBtn {
   margin-left: 20px;
+}
+
+.quantityInput {
+  width: 147px !important;
+}
+
+.addDiv {
+  margin-top: 15px;
+}
+
+.btnAddSubDiv {
+  padding-left: 0px !important;
+}
+
+.btnAddSub {
+  width: 105px;
 }

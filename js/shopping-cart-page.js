@@ -1,7 +1,7 @@
 $(document).ready( () => {
   
   const spinner = `<img class="icon spinner" src="/images/graphics/spinner.png">`;
-  const check = `<img class="icon check" src="/images/graphics/spinner.png">`;
+  //const check = `<img class="icon check" src="/images/graphics/spinner.png">`;
   //get the shopping list and render it
   const content = getCartContents();
 
@@ -19,8 +19,10 @@ $(document).ready( () => {
       getCartData( updateData, (response) => {
         if( response.success == true ){
           $('.spinner').remove();
-          //$(target).text('Updated')
-          $(target).append(check);
+          $(target).text('Updated!');
+          //$(target).append(check);
+          //not working
+          $('#cart-total').getCartTotal();
           
         }
       });
@@ -94,26 +96,24 @@ function getCartContents(){
                 <input type="hidden" name="productId" value="${productId}">
                 <input type="hidden" name="itemId" value="${itemId}">
                 <div class="input-group">
-                  <div class="input-group-prepend">
-                    <button class="btn btn-md btn-default" type="button" data-function="subtract">
-                      &minus;
-                    </button>
-                  </div>
-                  <input type="text" name="quantity" min="1" class="border-defalut form-control text-center" value="${quantity}">
-                  <div class="input-group-append">
-                    <button class="btn btn-md btn-default" type="button" data-function="add">
-                      &plus;
-                    </button>
-                  </div>
-                </div>
+                  <div class="input-group product-quantity my-2 my-md-0">
+                
+                    <span class="input-group-btn">
+                      <button class="btn btn-md btn-default" data-function="subtract" type="button">&minus;</button>
+                    </span>
+                    <input type="text" name="quantity" min="1" class="quantityInput form-control border-default text-center flex-fill" value="${quantity}">
+                    <span class="input-group-btn">
+                      <button class="btn btn-md btn-default" data-function="add" type="button" >&plus;</button>
+                    </span>
+                  
               </div>
-              <div class="col col-sm-6 col-md-6 mt-sm-2 mt-md-2">
-                <button type="btn btn-md btn-default" class="btn btn-outline-info btn-block" data-product-id="${productId}" data-item-id="${itemId}" data-action="update">
+              <div class="col col-sm-6 col-md-6 mt-sm-2 mt-md-2 btnAddSubDiv">
+                <button type="button" class="btn btn-md btn-default btnAddSub" data-product-id="${productId}" data-item-id="${itemId}" data-action="update">
                   Update
                 </button>
               </div>
-              <div class="col col-sm-6 col-md-6 mt-sm-2 mt-md-2">
-                <button type="btn btn-md btn-default" class="btn btn-outline-info btn-block" data-product-id="${productId}" data-item-id="${itemId}" data-action="delete">
+              <div class="col col-sm-6 col-md-6 mt-sm-2 mt-md-2 btnAddSubDiv">
+                <button type="button" class="btn btn-md btn-default btnAddSub" data-product-id="${productId}" data-item-id="${itemId}" data-action="delete">
                   Delete
                 </button>
               </div>
@@ -128,7 +128,7 @@ function getCartContents(){
       let totalTemplate = `<div class="row">
         <div class="col">Total</div>
         <div class="col-4">
-            <div class="">$${totalPrice}
+            <div id="cart-total">$${totalPrice}
               <button class="btn btn-md btn-default checkoutBtn">Checkout</button>
             </div>
         </div>
