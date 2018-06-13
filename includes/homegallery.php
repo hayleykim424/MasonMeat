@@ -45,18 +45,18 @@
     
     <div class="col-md-4">
       <div class="thumbnail">
-          <a href="products.php?category=0"><img class = "homeGallery" src="/images/products/wholesalemeat1.jpg" alt="wholesalemeat"></a>
+          <a href="products.php?category=5"><img class = "homeGallery" src="/images/products/wholesalemeat1.jpg" alt="wholesalemeat"></a>
           <div class="captionGallery">
-            <p class="galleryCaption"><a class ="meatCatLink" href="products.php?category=0">WHOLESALE</a></p>
+            <p class="galleryCaption"><a class ="meatCatLink" href="products.php?category=5">WHOLESALE</a></p>
           </div>
       </div>
     </div>
     
     <div class="col-md-4">
       <div class="thumbnail">
-          <a href="products.php?category=0"><img class = "homeGallery" src="/images/products/special1.jpg" alt="special"></a>
+          <a href="products.php?category=5"><img class = "homeGallery" src="/images/products/special1.jpg" alt="special"></a>
           <div class="captionGallery">
-            <p class="galleryCaption"><a class ="meatCatLink" href="products.php?category=0">SPECIAL</a></p>
+            <p class="galleryCaption"><a class ="meatCatLink" href="products.php?category=5">SPECIAL</a></p>
           </div>
       </div>
     </div>

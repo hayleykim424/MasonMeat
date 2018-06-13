@@ -45,6 +45,9 @@ $page_title = $product_name;
         </div>
         
         <div class="col-sm-6">
+          
+          <div class="alert-success-div"></div>
+          
           <h2>
             <?php echo $product_name; ?>
           </h2>
@@ -58,44 +61,79 @@ $page_title = $product_name;
           <div>
             
             
-            
-          <div class="form-row w-100">  
-            <div class="col-6 col-sm-4 col-md-4">
-                <div class="quantityDiv1 input-group">
+           <!--form for shopping cart and wishlist-->
+          <form id="shopping-form" class="my-2 form-inline">
+            <div class="form-row w-100">
+              <div class="col-8 col-md-3 input-group">
+                <div class="input-group product-quantity my-2 my-md-0">
                   <div class="input-group-prepend">
                     <button class="btn btn-outline-primary" data-function="subtract" type="button">&minus;</button>
                   </div>
-                  <input type="text" name="quantity" value="1" min="1" class="quantityInput form-control border-primary text-center flex-fill">
+                  <input type="text" name="quantity" value="1" min="1" class="form-control border-primary text-center flex-fill">
                   <div class="input-group-append">
                     <button class="btn btn-outline-primary" data-function="add" type="button">&plus;</button>
                   </div>
-                  
-                <!--product id in the form-->
+                  <!--product id in the form-->
                   <input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
                 </div>
-            </div>
-          </div>
-          
-          <div class="form-row w-100">
-              
-            <div class="col col-sm-6" style="max-width:120px;">
-              <button class="btn btn-md btn-default" type="submit" name="submit" value="shoppingcart">
-                <img class ="cart" src="/images/graphics/cart.png">
-                Add to cart
-              </button>
-            </div>  
-            
-            <div class="col col-sm-6" style="max-width:150px;">  
-              <button class="btn btn-md btn-default" type="submit" name="submit" value="wishlist">
-                <img class ="favourite" src="/images/graphics/like.png">
-                Add to wishlist
-              </button>
-            </div>
-          </div>  
-            
-            
-            <div class="col col-sm-8">
               </div>
+              
+              <div class="form-row w-100">
+              
+              <div class="col-12 col-md-7">
+                <button class="btn btn-md btn-default" type="submit" name="submit" value="shoppingcart">
+                  <img class="icon d-inline-block cart" src="images/graphics/cart.png">
+                  Add to cart
+                </button>
+                <button class="btn btn-md btn-default" type="submit" name="submit" value="wishlist">
+                  <img class="icon d-inline-block favourite" src="images/graphics/like.png">
+                  Wishlist
+                </button>
+              </div>
+              
+              </div>
+              
+            </div>
+          </form>
+          
+          
+          
+          <!--<div class="form-row w-100">  -->
+          <!--  <div class="col-6 col-sm-4 col-md-4">-->
+          <!--      <div class="quantityDiv1 input-group">-->
+          <!--        <div class="input-group-prepend">-->
+          <!--          <button class="btn btn-outline-primary" data-function="subtract" type="button">&minus;</button>-->
+          <!--        </div>-->
+          <!--        <input type="text" name="quantity" value="1" min="1" class="quantityInput form-control border-primary text-center flex-fill">-->
+          <!--        <div class="input-group-append">-->
+          <!--          <button class="btn btn-outline-primary" data-function="add" type="button">&plus;</button>-->
+          <!--        </div>-->
+                  
+                
+          <!--      </div>-->
+          <!--  </div>-->
+          <!--</div>-->
+          
+          <!--<div class="form-row w-100">-->
+              
+          <!--  <div class="col col-sm-6" style="max-width:120px;">-->
+          <!--    <button class="btn btn-md btn-default" type="submit" name="submit" value="shoppingcart">-->
+          <!--      <img class ="cart" src="/images/graphics/cart.png">-->
+          <!--      Add to cart-->
+          <!--    </button>-->
+          <!--  </div>  -->
+            
+          <!--  <div class="col col-sm-6" style="max-width:150px;">  -->
+          <!--    <button class="btn btn-md btn-default" type="submit" name="submit" value="wishlist">-->
+          <!--      <img class ="favourite" src="/images/graphics/like.png">-->
+          <!--      Add to wishlist-->
+          <!--    </button>-->
+          <!--  </div>-->
+          <!--</div>  -->
+            
+            
+          <!--  <div class="col col-sm-8">-->
+          <!--    </div>-->
             
             
             
@@ -109,3 +147,12 @@ $page_title = $product_name;
     <?php include('includes/footer.php'); ?>
   </body>
 </html>
+
+<template id="alert-template">
+  <div class="alert alert-dismissible fade show" role="alert">
+    <span class="alert-message"></span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</template>

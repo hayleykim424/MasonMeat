@@ -19,4 +19,6 @@ $page_title = "Shopping Cart";
   
     <script src="/js/shopping-cart-page.js"></script>
   </body>
+  <?php include('includes/footer.php'); ?>  
 </html>
+

@@ -1,7 +1,7 @@
 $(document).ready( () => {
   
-  const spinner = `<img class="icon spinner" src="/images/graphics/icons/moc-spin-circle.png">`;
-  const check = `<img class="icon check" src="/images/graphics/icons/moc-check.png">`;
+  const spinner = `<img class="icon spinner" src="/images/graphics/spinner.png">`;
+  const check = `<img class="icon check" src="/images/graphics/spinner.png">`;
   //get the shopping list and render it
   const content = getCartContents();
 
@@ -19,7 +19,7 @@ $(document).ready( () => {
       getCartData( updateData, (response) => {
         if( response.success == true ){
           $('.spinner').remove();
-          $(target).text('Updated')
+          //$(target).text('Updated')
           $(target).append(check);
           
         }
@@ -83,7 +83,6 @@ function getCartContents(){
           <div class="col-6 col-sm-6 col-md-3">
             <h5>${productName}</h5>
             <p class="product-price price">${productPrice}</p>
-            <p>product id: ${productId} </p>
           </div>
           <div class="col-12 col-sm-12 col-md-5 mt-sm-2">
           <form id="shopping-list-form-${itemId}" class="shopping-list-form form-inline">
@@ -96,25 +95,25 @@ function getCartContents(){
                 <input type="hidden" name="itemId" value="${itemId}">
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <button class="btn btn-outline-primary" type="button" data-function="subtract">
+                    <button class="btn btn-md btn-default" type="button" data-function="subtract">
                       &minus;
                     </button>
                   </div>
-                  <input type="text" name="quantity" min="1" class="border-primary form-control text-center" value="${quantity}">
+                  <input type="text" name="quantity" min="1" class="border-defalut form-control text-center" value="${quantity}">
                   <div class="input-group-append">
-                    <button class="btn btn-outline-primary" type="button" data-function="add">
+                    <button class="btn btn-md btn-default" type="button" data-function="add">
                       &plus;
                     </button>
                   </div>
                 </div>
               </div>
               <div class="col col-sm-6 col-md-6 mt-sm-2 mt-md-2">
-                <button type="button" class="btn btn-outline-info btn-block" data-product-id="${productId}" data-item-id="${itemId}" data-action="update">
+                <button type="btn btn-md btn-default" class="btn btn-outline-info btn-block" data-product-id="${productId}" data-item-id="${itemId}" data-action="update">
                   Update
                 </button>
               </div>
               <div class="col col-sm-6 col-md-6 mt-sm-2 mt-md-2">
-                <button type="button" class="btn btn-outline-info btn-block" data-product-id="${productId}" data-item-id="${itemId}" data-action="delete">
+                <button type="btn btn-md btn-default" class="btn btn-outline-info btn-block" data-product-id="${productId}" data-item-id="${itemId}" data-action="delete">
                   Delete
                 </button>
               </div>
@@ -129,15 +128,9 @@ function getCartContents(){
       let totalTemplate = `<div class="row">
         <div class="col">Total</div>
         <div class="col-4">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">$</span>
+            <div class="">$${totalPrice}
+              <button class="btn btn-md btn-default checkoutBtn">Checkout</button>
             </div>
-            <input name="cart-total" id="cart-total" class="form-control text-right" type="text" value="${totalPrice}" readonly>
-            <div class="input-group-append">
-              <button class="btn btn-outline-success">Checkout</button>
-            </div>
-          <div>
         </div>
       </div><hr>`;
       $('#shopping-list').append(totalTemplate);

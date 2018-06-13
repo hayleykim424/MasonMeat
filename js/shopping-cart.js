@@ -8,6 +8,18 @@ function updateCount( tgt, count ){
   }
 }
 
+function showAlert(templateId,type,forElement,message){
+  //get reference to the template
+  let template = $('#'+templateId).html().trim();
+  let clone = $(template);
+  $(clone).addClass('alert-' + type);
+  $(clone).find('.alert-message').text(message);
+  //$(forElement).parents('.form-group').append(clone);
+  $('.'+forElement).append(clone);
+}
+
+
+
 $(document).ready(
   () => {
     $('#shopping-form').submit(
@@ -19,7 +31,7 @@ $(document).ready(
     $('#shopping-form').click(
       (event) => {
         //add spinner to the button
-        const spinner = '<img class="icon spinner" src="/images/graphics/icons/moc-spin-circle.png">';
+        const spinner = '<img class="icon spinner" src="/images/graphics/spinner.png">';
         //get the value of the target button either 'shoppingcart' or 'wishlist'
         let tgtVal = $(event.target).val();
         if( tgtVal == 'shoppingcart'){
@@ -48,6 +60,10 @@ $(document).ready(
               //remove the spinner
               $('.spinner').remove();
               //reenable the button
+              $(event.target).attr('disabled',false);
+              
+              //if registration is successful
+            showAlert('alert-template', 'success','alert-success-div','item added to your shopping cart!');
               
             }
             else{

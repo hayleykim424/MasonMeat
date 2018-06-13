@@ -1,5 +1,3 @@
-
-
 $(document).ready(
   () => {
     $('#login-form').on('submit',

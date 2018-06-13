@@ -20,21 +20,23 @@
     <section class ="ourstory-content">
       <div class="container">
       <div class ="row">
-        <div class ="thumb-image">
+        <div class ="about-image">
           <img src = "/images/about/about3.jpg" alt="Our Story">
+          <img src = "/images/about/about5.jpg" >
         </div>
+        
         <div class = "content">
           <h3 class = "subtitle">Our Story</h3>
           <p class = "message">
             We pride ourselves on premium cuts of meat, the finest poultry, competitive prices and reliable on-time delivery of your complete order.
           </p>
           <p class = "message">
-            Located in Sydney, Mason’s Best Meat offers delicious MSA graded beef from our Australian farmers, tasty sausages, 
+            Located in Sydney, Mason's Best Meat offers delicious MSA graded beef from our Australian farmers, tasty sausages, 
             succulent lamb, pork and veal, plus chemical-free and hormone-free chicken and turkey. For that special occasion, 
             you can even order specialist meats online such as duck, quail, pheasant, spatchcock, kangaroo and crocodile.
           </p>
           <p class = "message">
-            Mason’s Best Meat provides to you best quality of meat in this online store in convenient way that means you can order premium meats online from the anywhere with website connection.
+            Mason's Best Meat provides to you best quality of meat in this online store in convenient way that means you can order premium meats online from the anywhere with website connection.
           </p>
            <p class = "message">
            That's how we established Mason's Best Meat!

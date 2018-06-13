@@ -7,6 +7,11 @@ h1,h2,h3,h4,h5,h6{
   max-height:50px;
 }
 
+.content {
+  border: 1px red solid;
+  min-height: 500px;
+}
+
 .product-column{
   min-height:200px;
 }
@@ -192,7 +197,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .footer {
-  background-color:#f8f8f8;
+  background-color:#f2eaea;
   padding-top: 30px;
   padding-bottom: 10px;
   bottom:0;
@@ -382,4 +387,19 @@ a:link, a:visited,a:hover {
 
 .quantityDiv1 {
   display: inline-block !important;
+}
+
+div.thumb-image {
+    height: 64px;
+    width: 64px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.thumb-image img {
+    display:block;
+    margin: 0px auto;
+}
+
+.checkoutBtn {
+  margin-left: 20px;
 }
